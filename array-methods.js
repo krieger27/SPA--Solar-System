@@ -21,7 +21,11 @@
    let planetsUpper = planets.map((planet) =>
     planet.charAt(0).toUpperCase()+ planet.slice(1)
     );
-    el.innerHTML +=planetsUpper;
+    el.innerHTML +=`<p>${planetsUpper}</p>`;
+
+    let arrayWE = planets.filter((planet) =>
+        planet.includes("e"));
+    el.innerHTML += arrayWE;
 
 
 // Use the reduce method to create a sentence from the words in the following array
